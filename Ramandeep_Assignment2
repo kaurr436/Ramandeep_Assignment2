@@ -1,0 +1,29 @@
+sing System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //intialize variable of even and odd numbers
+        int sumEven = 0;
+        int sumOdd = 0;
+
+        for (int x = 0; x < 10; x++)
+        {
+            if (x % 2 == 0)
+            {
+                Console.WriteLine($"{x} is an even number");
+                sumEven += x;
+            }
+            else
+            {
+                Console.WriteLine($"{x} is an odd number");
+                sumOdd += x;
+            }
+        }
+//sum of even and odd numbers
+
+        Console.WriteLine($"Total of even numbers: {sumEven}");
+        Console.WriteLine($"Total of odd numbers: {sumOdd}");
+    }
+}
